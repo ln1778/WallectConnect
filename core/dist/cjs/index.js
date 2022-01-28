@@ -312,6 +312,7 @@ class Connector {
                         peerId: this.clientId,
                         peerMeta: this.clientMeta,
                         chainId: opts && opts.chainId ? opts.chainId : null,
+                        code_name:opts && opts.code_name ? opts.code_name : null,
                     },
                 ],
             });
