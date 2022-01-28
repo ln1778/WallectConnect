@@ -1,5 +1,5 @@
 {
-  "name": "@walletconnect/qrcode-modal",
+  "name": "WallectConnect/qrcode-modal",
   "version": "1.7.1",
   "description": "QR Code Modal for WalletConnect",
   "scripts": {
@@ -25,7 +25,7 @@
     "dapp"
   ],
   "author": "WalletConnect, Inc. <walletconnect.com>",
-  "homepage": "https://github.com/WalletConnect/walletconnect-monorepo/",
+  "homepage": "https://github.com/ln1778/walletconnect-monorepo/",
   "license": "Apache-2.0",
   "source": "src/index.ts",
   "main": "dist/cjs/index.js",
@@ -36,10 +36,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/walletconnect/walletconnect-monorepo.git"
+    "url": "git+https://github.com/ln1778/walletconnect-monorepo.git"
   },
   "bugs": {
-    "url": "https://github.com/walletconnect/walletconnect-monorepo/issues"
+    "url": "https://github.com/ln1778/walletconnect-monorepo/issues"
   },
   "devDependencies": {
     "@babel/cli": "7.8.3",
@@ -68,12 +68,40 @@
     "webpack-cli": "3.3.10"
   },
   "dependencies": {
-    "@walletconnect/browser-utils": "^1.7.1",
-    "@walletconnect/mobile-registry": "^1.4.0",
-    "@walletconnect/types": "^1.7.1",
+    "WallectConnect/browser-utils": "^1.7.1",
+    "WallectConnect/mobile-registry": "^1.4.0",
+    "WallectConnect/types": "^1.7.1",
     "copy-to-clipboard": "^3.3.1",
     "preact": "10.4.1",
     "qrcode": "1.4.4"
   },
-  "gitHead": "165f7993c2acc907c653c02847fb02721052c6e7"
+  "gitHead": "165f7993c2acc907c653c02847fb02721052c6e7",
+  "react-native": {
+    "console": "console-browserify",
+    "crypto": "react-native-crypto",
+    "http": "@tradle/react-native-http",
+    "https": "https-browserify",
+    "os": "react-native-os",
+    "_stream_transform": "readable-stream/transform",
+    "_stream_readable": "readable-stream/readable",
+    "_stream_writable": "readable-stream/writable",
+    "_stream_duplex": "readable-stream/duplex",
+    "_stream_passthrough": "readable-stream/passthrough",
+    "stream": "stream-browserify",
+    "vm": "vm-browserify"
+  },
+  "browser": {
+    "console": "console-browserify",
+    "crypto": "react-native-crypto",
+    "http": "@tradle/react-native-http",
+    "https": "https-browserify",
+    "os": "react-native-os",
+    "_stream_transform": "readable-stream/transform",
+    "_stream_readable": "readable-stream/readable",
+    "_stream_writable": "readable-stream/writable",
+    "_stream_duplex": "readable-stream/duplex",
+    "_stream_passthrough": "readable-stream/passthrough",
+    "stream": "stream-browserify",
+    "vm": "vm-browserify"
+  }
 }

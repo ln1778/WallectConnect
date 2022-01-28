@@ -1,4 +1,4 @@
-import { IQRCodeModalOptions } from "@walletconnect/types";
+import { IQRCodeModalOptions } from "WallectConnect/types";
 import { TextMap } from "../types";
 interface ModalProps {
     text: TextMap;

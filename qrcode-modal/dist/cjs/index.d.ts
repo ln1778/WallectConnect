@@ -1,4 +1,4 @@
-import { IQRCodeModalOptions } from "@walletconnect/types";
+import { IQRCodeModalOptions } from "WallectConnect/types";
 declare function open(uri: string, cb: any, qrcodeModalOptions?: IQRCodeModalOptions): void;
 declare function close(): void;
 declare const _default: {

@@ -1,4 +1,4 @@
-import { IMobileRegistryEntry, IQRCodeModalOptions } from "@walletconnect/types";
+import { IMobileRegistryEntry, IQRCodeModalOptions } from "WallectConnect/types";
 import { TextMap } from "../types";
 interface LinkDisplayProps {
     mobile: boolean;
