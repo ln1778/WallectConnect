@@ -19,7 +19,8 @@
     "url": "https://github.com/ln1778/WallectConnect/issues"
   },
   "homepage": "https://github.com/ln1778/WallectConnect#readme",
+  
   "dependencies": {
-    "my-package": "^0.0.0"
+   
   }
 }
