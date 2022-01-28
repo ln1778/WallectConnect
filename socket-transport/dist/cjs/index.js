@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
-const utils_1 = require("WallectConnect/utils");
+const utils_1 = require("utils");
 const network_1 = (0, tslib_1.__importDefault)(require("./network"));
 const WS = typeof global.WebSocket !== "undefined" ? global.WebSocket : require("ws");
 class SocketTransport {

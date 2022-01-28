@@ -1,4 +1,4 @@
-import { IJsonRpcRequest, IJsonRpcResponseSuccess, IJsonRpcResponseError, IEncryptionPayload } from "WallectConnect/types";
+import { IJsonRpcRequest, IJsonRpcResponseSuccess, IJsonRpcResponseError, IEncryptionPayload } from "./../../../types";
 export declare function generateKey(length?: number): Promise<ArrayBuffer>;
 export declare function verifyHmac(payload: IEncryptionPayload, key: Uint8Array): Promise<boolean>;
 export declare function encrypt(data: IJsonRpcRequest | IJsonRpcResponseSuccess | IJsonRpcResponseError, key: ArrayBuffer, providedIv?: ArrayBuffer): Promise<IEncryptionPayload>;

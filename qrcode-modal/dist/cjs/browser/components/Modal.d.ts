@@ -1,4 +1,4 @@
-import { IQRCodeModalOptions } from "WallectConnect/types";
+import { IQRCodeModalOptions } from "./../../../types";
 import { TextMap } from "../types";
 interface ModalProps {
     text: TextMap;

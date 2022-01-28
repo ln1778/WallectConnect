@@ -1,2 +1,2 @@
-export * from "WallectConnect/environment";
+export * from "environment";
 //# sourceMappingURL=env.d.ts.map

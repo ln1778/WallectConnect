@@ -1,4 +1,4 @@
-import * as env from "WallectConnect/environment";
+import * as env from "environment";
 export function randomBytes(length) {
     const browserCrypto = env.getBrowerCrypto();
     return browserCrypto.getRandomValues(new Uint8Array(length));

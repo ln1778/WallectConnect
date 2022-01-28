@@ -1,4 +1,4 @@
-import * as safeJson from "WallectConnect/safe-json";
+import * as safeJson from "./../../../safe-json";
 export const safeJsonParse = safeJson.safeJsonParse;
 export const safeJsonStringify = safeJson.safeJsonStringify;
 //# sourceMappingURL=json.js.map

@@ -1,4 +1,4 @@
-import { IQRCodeModalOptions } from "WallectConnect/types";
+import { IQRCodeModalOptions } from "./../../../types";
 declare function open(uri: string, cb: any, qrcodeModalOptions?: IQRCodeModalOptions): void;
 declare function close(): void;
 declare const _default: {

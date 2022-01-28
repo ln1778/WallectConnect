@@ -1,4 +1,4 @@
-import { getDocumentOrThrow, getLocationOrThrow, } from "WallectConnect/window-getters";
+import { getDocumentOrThrow, getLocationOrThrow, } from "window-getters";
 export function getWindowMetadata() {
     let doc;
     let loc;

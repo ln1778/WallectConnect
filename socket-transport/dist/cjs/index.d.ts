@@ -1,4 +1,4 @@
-import { ITransportLib, ISocketTransportOptions } from "WallectConnect/types";
+import { ITransportLib, ISocketTransportOptions } from "types";
 declare class SocketTransport implements ITransportLib {
     private opts;
     private _protocol;

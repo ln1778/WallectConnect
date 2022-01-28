@@ -1,4 +1,4 @@
-import { IMobileRegistryEntry, IQRCodeModalOptions } from "WallectConnect/types";
+import { IMobileRegistryEntry, IQRCodeModalOptions } from "types";
 import { TextMap } from "../types";
 interface LinkDisplayProps {
     mobile: boolean;

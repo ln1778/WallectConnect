@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.parseTransactionData = exports.parsePersonalSign = exports.isValidAddress = exports.toChecksumAddress = void 0;
 const js_sha3_1 = require("js-sha3");
-const encoding_1 = require("WallectConnect/encoding");
+const encoding_1 = require("encoding");
 const encoding_2 = require("./encoding");
 const misc_1 = require("./misc");
 const validators_1 = require("./validators");

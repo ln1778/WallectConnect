@@ -5,7 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.nodeRipemd160 = exports.nodeSha512 = exports.nodeSha256 = exports.nodeHmacSha512Sign = exports.nodeHmacSha256Sign = exports.nodeAesDecrypt = exports.nodeAesEncrypt = void 0;
 const crypto_1 = __importDefault(require("crypto"));
-const encoding_1 = require("WallectConnect/encoding");
+const encoding_1 = require("./../../../encoding");
 const constants_1 = require("../constants");
 function nodeAesEncrypt(iv, key, data) {
     const cipher = crypto_1.default.createCipheriv(constants_1.AES_NODE_ALGO, Buffer.from(key), Buffer.from(iv));

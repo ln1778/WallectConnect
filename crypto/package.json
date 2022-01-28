@@ -67,9 +67,6 @@
     "lint": "eslint -c '../../.eslintrc' --fix './src/**/*.ts'"
   },
   "dependencies": {
-    "WallectConnect/encoding": "^1.0.0",
-    "WallectConnect/environment": "^1.0.0",
-    "WallectConnect/randombytes": "^1.0.1",
     "aes-js": "^3.1.2",
     "hash.js": "^1.1.7"
   },

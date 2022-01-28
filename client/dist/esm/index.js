@@ -1,5 +1,5 @@
-import Connector from "WallectConnect/core";
-import * as cryptoLib from "WallectConnect/iso-crypto";
+import Connector from "./../../../core";
+import * as cryptoLib from "./../../../iso-crypto";
 class WalletConnect extends Connector {
     constructor(connectorOpts, pushServerOpts) {
         super({

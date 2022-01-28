@@ -1,5 +1,5 @@
 import { ErrorResponse } from "./types";
-import { JsonRpcError, JsonRpcValidation } from "WallectConnect/jsonrpc-types";
+import { JsonRpcError, JsonRpcValidation } from "./../../../jsonrpc-types";
 export declare function isServerErrorCode(code: number): boolean;
 export declare function isReservedErrorCode(code: number): boolean;
 export declare function isValidErrorCode(code: number): boolean;

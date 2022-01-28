@@ -1,4 +1,4 @@
-import { IJsonRpcSubscription, IJsonRpcRequest, IJsonRpcResponseSuccess, IJsonRpcResponseError, IInternalEvent } from "WallectConnect/types";
+import { IJsonRpcSubscription, IJsonRpcRequest, IJsonRpcResponseSuccess, IJsonRpcResponseError, IInternalEvent } from "types";
 export declare function isEmptyString(value: string): boolean;
 export declare function isEmptyArray(array: any[]): boolean;
 export declare function isBuffer(val: any): boolean;

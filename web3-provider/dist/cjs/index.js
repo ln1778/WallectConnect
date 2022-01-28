@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
-const client_1 = (0, tslib_1.__importDefault)(require("WallectConnect/client"));
-const qrcode_modal_1 = (0, tslib_1.__importDefault)(require("WallectConnect/qrcode-modal"));
-const http_connection_1 = (0, tslib_1.__importDefault)(require("WallectConnect/http-connection"));
-const utils_1 = require("WallectConnect/utils");
+const client_1 = (0, tslib_1.__importDefault)(require("client"));
+const qrcode_modal_1 = (0, tslib_1.__importDefault)(require("qrcode-modal"));
+const http_connection_1 = (0, tslib_1.__importDefault)(require("http-connection"));
+const utils_1 = require("utils");
 const ProviderEngine = require("web3-provider-engine");
 const CacheSubprovider = require("web3-provider-engine/subproviders/cache");
 const FixtureSubprovider = require("web3-provider-engine/subproviders/fixture");

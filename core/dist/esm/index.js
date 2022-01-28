@@ -1,5 +1,5 @@
-import { parsePersonalSign, parseTransactionData, convertArrayBufferToHex, convertHexToArrayBuffer, getClientMeta, payloadId, uuid, formatRpcError, parseWalletConnectUri, convertNumberToHex, isJsonRpcResponseSuccess, isJsonRpcResponseError, isSilentPayload, getLocal, signingMethods, mobileLinkChoiceKey, isMobile, removeLocal, } from "WallectConnect/utils";
-import SocketTransport from "WallectConnect/socket-transport";
+import { parsePersonalSign, parseTransactionData, convertArrayBufferToHex, convertHexToArrayBuffer, getClientMeta, payloadId, uuid, formatRpcError, parseWalletConnectUri, convertNumberToHex, isJsonRpcResponseSuccess, isJsonRpcResponseError, isSilentPayload, getLocal, signingMethods, mobileLinkChoiceKey, isMobile, removeLocal, } from "./../../../utils";
+import SocketTransport from "socket-transport";
 import { ERROR_SESSION_CONNECTED, ERROR_SESSION_DISCONNECTED, ERROR_SESSION_REJECTED, ERROR_MISSING_JSON_RPC, ERROR_MISSING_RESULT, ERROR_MISSING_ERROR, ERROR_MISSING_METHOD, ERROR_MISSING_ID, ERROR_INVALID_RESPONSE, ERROR_INVALID_URI, ERROR_MISSING_REQUIRED, ERROR_QRCODE_MODAL_NOT_PROVIDED, ERROR_QRCODE_MODAL_USER_CLOSED, } from "./errors";
 import EventManager from "./events";
 import SessionStorage from "./storage";

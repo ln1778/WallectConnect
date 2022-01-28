@@ -2,8 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getRpcUrl = exports.getInfuraRpcUrl = exports.logDeprecationWarning = exports.uuid = exports.payloadId = exports.removeHexLeadingZeros = exports.removeHexPrefix = exports.addHexPrefix = exports.sanitizeHex = void 0;
 const tslib_1 = require("tslib");
-const encoding = (0, tslib_1.__importStar)(require("WallectConnect/encoding"));
-const jsonRpcUtils = (0, tslib_1.__importStar)(require("WallectConnect/jsonrpc-utils"));
+const encoding = (0, tslib_1.__importStar)(require("encoding"));
+const jsonRpcUtils = (0, tslib_1.__importStar)(require("jsonrpc-utils"));
 const constants_1 = require("./constants");
 function sanitizeHex(hex) {
     return encoding.sanitizeHex(hex);
@@ -32,7 +32,7 @@ function uuid() {
 }
 exports.uuid = uuid;
 function logDeprecationWarning() {
-    console.warn("DEPRECATION WARNING: This WalletConnect client library will be deprecated in favor of WallectConnect/client. Please check docs.walletconnect.org to learn more about this migration!");
+    console.warn("DEPRECATION WARNING: This WalletConnect client library will be deprecated in favor of client. Please check docs.walletconnect.org to learn more about this migration!");
 }
 exports.logDeprecationWarning = logDeprecationWarning;
 function getInfuraRpcUrl(chainId, infuraId) {

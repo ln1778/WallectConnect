@@ -1,5 +1,5 @@
 import aesJs from "aes-js";
-import { hexToArray } from "WallectConnect/encoding";
+import { hexToArray } from "./../../../encoding";
 import * as hash from "hash.js";
 import { HEX_ENC, SHA256_NODE_ALGO, SHA512_NODE_ALGO } from "../constants";
 import { pkcs7 } from "../helpers";

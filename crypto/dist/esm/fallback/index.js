@@ -1,4 +1,4 @@
-export * from "WallectConnect/randombytes";
+export * from "./../../../randombytes";
 export * from "./aes";
 export * from "./hmac";
 export * from "./sha2";

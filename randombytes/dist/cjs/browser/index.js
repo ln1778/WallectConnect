@@ -20,7 +20,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.randomBytes = void 0;
-const env = __importStar(require("WallectConnect/environment"));
+const env = __importStar(require("environment"));
 function randomBytes(length) {
     const browserCrypto = env.getBrowerCrypto();
     return browserCrypto.getRandomValues(new Uint8Array(length));

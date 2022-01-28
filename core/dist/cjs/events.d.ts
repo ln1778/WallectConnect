@@ -1,4 +1,4 @@
-import { IInternalEvent, IJsonRpcResponseSuccess, IJsonRpcResponseError, IJsonRpcRequest, IEventEmitter } from "WallectConnect/types";
+import { IInternalEvent, IJsonRpcResponseSuccess, IJsonRpcResponseError, IJsonRpcRequest, IEventEmitter } from "./../../../types";
 declare class EventManager {
     private _eventEmitters;
     constructor();

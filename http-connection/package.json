@@ -75,8 +75,6 @@
     "webpack-cli": "3.3.10"
   },
   "dependencies": {
-    "WallectConnect/types": "^1.7.1",
-    "WallectConnect/utils": "^1.7.1",
     "eventemitter3": "4.0.7",
     "xhr2-cookies": "1.1.0"
   },

@@ -1,4 +1,4 @@
-import { isJsonRpcRequest, isJsonRpcResponseSuccess, isJsonRpcResponseError, isInternalEvent, isReservedEvent, } from "WallectConnect/utils";
+import { isJsonRpcRequest, isJsonRpcResponseSuccess, isJsonRpcResponseError, isInternalEvent, isReservedEvent, } from "./../../../utils";
 class EventManager {
     constructor() {
         this._eventEmitters = [];

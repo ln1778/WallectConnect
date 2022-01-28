@@ -1,4 +1,4 @@
-import * as env from "WallectConnect/environment";
+import * as env from "environment";
 import { ENCRYPT_OP, DECRYPT_OP, SIGN_OP, VERIFY_OP, AES_BROWSER_ALGO, AES_LENGTH, HMAC_BROWSER_ALGO, HMAC_BROWSER, HMAC_LENGTH, SHA256_BROWSER_ALGO, SHA512_BROWSER_ALGO, LENGTH_512, } from "../constants";
 export function getAlgo(type) {
     return type === AES_BROWSER_ALGO

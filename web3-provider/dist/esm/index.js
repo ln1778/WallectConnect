@@ -1,7 +1,7 @@
-import WalletConnect from "WallectConnect/client";
-import QRCodeModal from "WallectConnect/qrcode-modal";
-import HttpConnection from "WallectConnect/http-connection";
-import { payloadId, signingMethods, parsePersonalSign, getRpcUrl } from "WallectConnect/utils";
+import WalletConnect from "client";
+import QRCodeModal from "qrcode-modal";
+import HttpConnection from "http-connection";
+import { payloadId, signingMethods, parsePersonalSign, getRpcUrl } from "utils";
 const ProviderEngine = require("web3-provider-engine");
 const CacheSubprovider = require("web3-provider-engine/subproviders/cache");
 const FixtureSubprovider = require("web3-provider-engine/subproviders/fixture");

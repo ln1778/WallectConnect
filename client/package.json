@@ -74,10 +74,7 @@
     "webpack-cli": "3.3.10"
   },
   "dependencies": {
-    "WallectConnect/core": "^1.7.1",
-    "WallectConnect/iso-crypto": "^1.7.1",
-    "WallectConnect/types": "^1.7.1",
-    "WallectConnect/utils": "^1.7.1"
+   
   },
   "gitHead": "165f7993c2acc907c653c02847fb02721052c6e7",
   "react-native": {

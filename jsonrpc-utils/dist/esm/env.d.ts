@@ -1,4 +1,4 @@
-import { isNode } from "WallectConnect/environment";
+import { isNode } from "./../../../environment";
 export declare const isNodeJs: typeof isNode;
-export * from "WallectConnect/environment";
+export * from "./../../../environment";
 //# sourceMappingURL=env.d.ts.map

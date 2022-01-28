@@ -1,4 +1,4 @@
-import { IWalletConnectSession } from "WallectConnect/types";
+import { IWalletConnectSession } from "./../../../types";
 declare class SessionStorage {
     storageId: string;
     constructor(storageId?: string);

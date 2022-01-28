@@ -1,6 +1,6 @@
 /// <reference types="node" />
-import { IClientMeta } from "WallectConnect/types";
-import * as windowGetters from "WallectConnect/window-getters";
+import { IClientMeta } from "./../../../types";
+import * as windowGetters from "./../../../window-getters";
 import { BrowserInfo, BotInfo, NodeInfo, SearchBotDeviceInfo, ReactNativeInfo } from "detect-browser";
 export declare function detectEnv(userAgent?: string): BrowserInfo | BotInfo | NodeInfo | SearchBotDeviceInfo | ReactNativeInfo | null;
 export declare function detectOS(): import("detect-browser").OperatingSystem | NodeJS.Platform | undefined;

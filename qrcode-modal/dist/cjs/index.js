@@ -1,6 +1,6 @@
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
-var browserUtils = require('WallectConnect/browser-utils');
+var browserUtils = require('browser-utils');
 var QRCode = _interopDefault(require('qrcode'));
 var copy = _interopDefault(require('copy-to-clipboard'));
 var React = require('preact/compat');

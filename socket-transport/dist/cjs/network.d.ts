@@ -1,4 +1,4 @@
-import { NetworkEvent, INetworkMonitor } from "WallectConnect/types";
+import { NetworkEvent, INetworkMonitor } from "types";
 declare class NetworkMonitor implements INetworkMonitor {
     private _eventEmitters;
     constructor();

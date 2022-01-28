@@ -22,7 +22,6 @@
     "url": "https://github.com/ln1778/walletconnect-monorepo/issues"
   },
   "devDependencies": {
-    "WallectConnect/utils": "^1.4.0",
     "axios": "^0.21.0"
   },
   "react-native": {

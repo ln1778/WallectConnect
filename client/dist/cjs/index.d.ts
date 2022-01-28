@@ -1,5 +1,5 @@
-import Connector from "WallectConnect/core";
-import { IWalletConnectOptions, IPushServerOptions } from "WallectConnect/types";
+import Connector from "core";
+import { IWalletConnectOptions, IPushServerOptions } from "types";
 declare class WalletConnect extends Connector {
     constructor(connectorOpts: IWalletConnectOptions, pushServerOpts?: IPushServerOptions);
 }

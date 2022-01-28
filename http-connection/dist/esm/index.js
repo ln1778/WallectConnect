@@ -1,6 +1,6 @@
 import EventEmitter from "eventemitter3";
 import { XMLHttpRequest } from "xhr2-cookies";
-import { getFromWindow } from "WallectConnect/utils";
+import { getFromWindow } from "utils";
 const XHR = getFromWindow("XMLHttpRequest") || XMLHttpRequest;
 class HTTPConnection extends EventEmitter {
     constructor(url) {
