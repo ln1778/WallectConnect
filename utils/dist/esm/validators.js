@@ -1,4 +1,4 @@
-import * as encoding from "@walletconnect/encoding";
+import * as encoding from "WallectConnect/encoding";
 import { signingMethods, reservedEvents } from "./constants";
 export function isEmptyString(value) {
     return value === "" || (typeof value === "string" && value.trim() === "");

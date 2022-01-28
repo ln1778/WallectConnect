@@ -1,5 +1,5 @@
-import HttpConnection from "@walletconnect/http-connection";
-import { IRPCMap, IConnector, IJsonRpcResponseSuccess, IWalletConnectProviderOptions, IQRCodeModalOptions } from "@walletconnect/types";
+import HttpConnection from "WallectConnect/http-connection";
+import { IRPCMap, IConnector, IJsonRpcResponseSuccess, IWalletConnectProviderOptions, IQRCodeModalOptions } from "WallectConnect/types";
 declare const ProviderEngine: any;
 declare class WalletConnectProvider extends ProviderEngine {
     bridge: string;
@@ -22,7 +22,7 @@ declare class WalletConnectProvider extends ProviderEngine {
     constructor(opts: IWalletConnectProviderOptions);
     get isWalletConnect(): boolean;
     get connector(): IConnector;
-    get walletMeta(): import("@walletconnect/types").IClientMeta | null;
+    get walletMeta(): import("WallectConnect/types").IClientMeta | null;
     enable: () => Promise<string[]>;
     request: (payload: any) => Promise<any>;
     send: (payload: any, callback?: any) => Promise<any>;

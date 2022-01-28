@@ -1,7 +1,7 @@
-import WalletConnect from "@walletconnect/client";
-import QRCodeModal from "@walletconnect/qrcode-modal";
-import HttpConnection from "@walletconnect/http-connection";
-import { payloadId, signingMethods, parsePersonalSign, getRpcUrl } from "@walletconnect/utils";
+import WalletConnect from "WallectConnect/client";
+import QRCodeModal from "WallectConnect/qrcode-modal";
+import HttpConnection from "WallectConnect/http-connection";
+import { payloadId, signingMethods, parsePersonalSign, getRpcUrl } from "WallectConnect/utils";
 const ProviderEngine = require("web3-provider-engine");
 const CacheSubprovider = require("web3-provider-engine/subproviders/cache");
 const FixtureSubprovider = require("web3-provider-engine/subproviders/fixture");
@@ -24,6 +24,8 @@ class WalletConnectProvider extends ProviderEngine {
         this.connectCallbacks = [];
         this.accounts = [];
         this.chainId = 1;
+        this.coin_code="";
+        this.contract="";
         this.rpcUrl = "";
         this.enable = async () => {
             const wc = await this.getWalletConnector();

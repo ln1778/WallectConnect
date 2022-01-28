@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getWindowMetadata = void 0;
-const window_getters_1 = require("@walletconnect/window-getters");
+const window_getters_1 = require("WallectConnect/window-getters");
 function getWindowMetadata() {
     let doc;
     let loc;

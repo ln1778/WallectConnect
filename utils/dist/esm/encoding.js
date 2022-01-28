@@ -1,5 +1,5 @@
 import BN from "bn.js";
-import * as encoding from "@walletconnect/encoding";
+import * as encoding from "WallectConnect/encoding";
 export function convertArrayBufferToBuffer(arrBuf) {
     return encoding.arrayToBuffer(new Uint8Array(arrBuf));
 }

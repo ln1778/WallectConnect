@@ -1,4 +1,4 @@
-export * from "@walletconnect/browser-utils";
+export * from "WallectConnect/browser-utils";
 export * from "./constants";
 export * from "./encoding";
 export * from "./ethereum";

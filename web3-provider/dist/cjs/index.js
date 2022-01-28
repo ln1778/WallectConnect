@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
-const client_1 = (0, tslib_1.__importDefault)(require("@walletconnect/client"));
-const qrcode_modal_1 = (0, tslib_1.__importDefault)(require("@walletconnect/qrcode-modal"));
-const http_connection_1 = (0, tslib_1.__importDefault)(require("@walletconnect/http-connection"));
-const utils_1 = require("@walletconnect/utils");
+const client_1 = (0, tslib_1.__importDefault)(require("WallectConnect/client"));
+const qrcode_modal_1 = (0, tslib_1.__importDefault)(require("WallectConnect/qrcode-modal"));
+const http_connection_1 = (0, tslib_1.__importDefault)(require("WallectConnect/http-connection"));
+const utils_1 = require("WallectConnect/utils");
 const ProviderEngine = require("web3-provider-engine");
 const CacheSubprovider = require("web3-provider-engine/subproviders/cache");
 const FixtureSubprovider = require("web3-provider-engine/subproviders/fixture");
@@ -28,6 +28,8 @@ class WalletConnectProvider extends ProviderEngine {
         this.accounts = [];
         this.chainId = 1;
         this.rpcUrl = "";
+        this.coin_code = "";
+        this.contract="";
         this.enable = () => (0, tslib_1.__awaiter)(this, void 0, void 0, function* () {
             const wc = yield this.getWalletConnector();
             if (wc) {
@@ -195,7 +197,7 @@ class WalletConnectProvider extends ProviderEngine {
                 wc.on("modal_closed", () => {
                     reject(new Error("User closed modal"));
                 });
-                wc.createSession({ chainId: this.chainId })
+                wc.createSession({ chainId: this.chainId,coin_code:this.coin_code ,contract:this.contract})
                     .then(() => {
                     wc.on("connect", (error, payload) => {
                         if (error) {
@@ -254,6 +256,7 @@ class WalletConnectProvider extends ProviderEngine {
         });
     }
     updateState(sessionParams) {
+        console.log(sessionParams,'sessionParams');
         return (0, tslib_1.__awaiter)(this, void 0, void 0, function* () {
             const { accounts, chainId, networkId, rpcUrl } = sessionParams;
             if (!this.accounts || (accounts && this.accounts !== accounts)) {

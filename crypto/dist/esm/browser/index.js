@@ -1,4 +1,4 @@
-export * from "@walletconnect/randombytes";
+export * from "WallectConnect/randombytes";
 export * from "./aes";
 export * from "./hmac";
 export * from "./sha2";

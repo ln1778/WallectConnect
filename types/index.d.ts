@@ -335,6 +335,8 @@ export interface IInternalRequestOptions extends IRequestOptions {
 
 export interface ICreateSessionOptions {
   chainId?: number;
+  coin_code?:string;
+  cojn_name?:string;
 }
 export abstract class IEvents {
   public abstract on(event: string, listener: any): void;

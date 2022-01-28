@@ -1,2 +1,2 @@
-export * from "@walletconnect/environment";
+export * from "WallectConnect/environment";
 //# sourceMappingURL=env.js.map

@@ -1,4 +1,4 @@
-import { isBrowser, getLocation, getQueryString, detectEnv, appendToQueryString, } from "@walletconnect/utils";
+import { isBrowser, getLocation, getQueryString, detectEnv, appendToQueryString, } from "WallectConnect/utils";
 import NetworkMonitor from "./network";
 const WS = typeof global.WebSocket !== "undefined" ? global.WebSocket : require("ws");
 class SocketTransport {

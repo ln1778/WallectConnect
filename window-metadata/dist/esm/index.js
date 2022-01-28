@@ -1,4 +1,4 @@
-import { getDocumentOrThrow, getLocationOrThrow, } from "@walletconnect/window-getters";
+import { getDocumentOrThrow, getLocationOrThrow, } from "WallectConnect/window-getters";
 export function getWindowMetadata() {
     let doc;
     let loc;

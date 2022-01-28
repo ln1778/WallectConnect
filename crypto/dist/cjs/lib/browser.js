@@ -29,7 +29,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.browserSha512 = exports.browserSha256 = exports.browserHmacSha512Sign = exports.browserHmacSha256Sign = exports.browserAesDecrypt = exports.browserAesEncrypt = exports.browserImportKey = exports.browserExportKey = exports.getOps = exports.getAlgo = void 0;
-const env = __importStar(require("@walletconnect/environment"));
+const env = __importStar(require("WallectConnect/environment"));
 const constants_1 = require("../constants");
 function getAlgo(type) {
     return type === constants_1.AES_BROWSER_ALGO

@@ -1,5 +1,5 @@
-import * as encoding from "@walletconnect/encoding";
-import * as jsonRpcUtils from "@walletconnect/jsonrpc-utils";
+import * as encoding from "WallectConnect/encoding";
+import * as jsonRpcUtils from "WallectConnect/jsonrpc-utils";
 import { infuraNetworks } from "./constants";
 export function sanitizeHex(hex) {
     return encoding.sanitizeHex(hex);
@@ -23,7 +23,7 @@ export function uuid() {
     return result;
 }
 export function logDeprecationWarning() {
-    console.warn("DEPRECATION WARNING: This WalletConnect client library will be deprecated in favor of @walletconnect/client. Please check docs.walletconnect.org to learn more about this migration!");
+    console.warn("DEPRECATION WARNING: This WalletConnect client library will be deprecated in favor of WallectConnect/client. Please check docs.walletconnect.org to learn more about this migration!");
 }
 export function getInfuraRpcUrl(chainId, infuraId) {
     let rpcUrl;

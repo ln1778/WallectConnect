@@ -1,4 +1,4 @@
-import { ITransportLib, ISocketTransportOptions } from "@walletconnect/types";
+import { ITransportLib, ISocketTransportOptions } from "WallectConnect/types";
 declare class SocketTransport implements ITransportLib {
     private opts;
     private _protocol;

@@ -1,5 +1,5 @@
 import crypto from "crypto";
-import { bufferToArray, concatBuffers } from "@walletconnect/encoding";
+import { bufferToArray, concatBuffers } from "WallectConnect/encoding";
 import { HMAC_NODE_ALGO, AES_NODE_ALGO, SHA512_NODE_ALGO, SHA256_NODE_ALGO, RIPEMD160_NODE_ALGO, } from "../constants";
 export function nodeAesEncrypt(iv, key, data) {
     const cipher = crypto.createCipheriv(AES_NODE_ALGO, Buffer.from(key), Buffer.from(iv));
