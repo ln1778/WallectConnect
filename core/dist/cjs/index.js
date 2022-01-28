@@ -313,6 +313,7 @@ class Connector {
                         peerMeta: this.clientMeta,
                         chainId: opts && opts.chainId ? opts.chainId : null,
                         code_name:opts && opts.code_name ? opts.code_name : null,
+                        contract:opts && opts.contract ? opts.contract : null,
                     },
                 ],
             });
