@@ -1,0 +1,9 @@
+{
+  "name": "WallectConnect",
+  "version": "1.0.0",
+  "description": "WalletConnect",
+  "main": "index.js",
+  "repository": "https://github.com/ln1778/WallectConnect.git",
+  "author": "ln1778 <465410291@qq.com>",
+  "license": "MIT"
+}
