@@ -1,6 +1,6 @@
 const path = require("path");
 const axios = require("axios");
-const { getWalletRegistryUrl, formatMobileRegistryEntry } = require("@walletconnect/utils");
+const { getWalletRegistryUrl, formatMobileRegistryEntry } = require("WallectConnect/utils");
 
 const { formatJson, writeFile } = require("../../../../scripts/shared");
 
