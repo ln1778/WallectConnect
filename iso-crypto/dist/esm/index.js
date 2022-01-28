@@ -1,6 +1,6 @@
-import * as crypto from "@walletconnect/crypto";
-import * as encoding from "@walletconnect/encoding";
-import { convertArrayBufferToBuffer, convertBufferToArrayBuffer } from "@walletconnect/utils";
+import * as crypto from "WallectConnect/crypto";
+import * as encoding from "WallectConnect/encoding";
+import { convertArrayBufferToBuffer, convertBufferToArrayBuffer } from "WallectConnect/utils";
 export async function generateKey(length) {
     const _length = (length || 256) / 8;
     const bytes = crypto.randomBytes(_length);

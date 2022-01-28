@@ -1,2 +1,2 @@
-export * from "@walletconnect/jsonrpc-types";
+export * from "WallectConnect/jsonrpc-types";
 //# sourceMappingURL=types.js.map

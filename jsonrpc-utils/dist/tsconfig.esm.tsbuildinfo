@@ -176,17 +176,17 @@
         "signature": "9b5cd44d10a2f3de680ffe30464591edb2053c907dcb061732f8b4b39f3ef4b3",
         "affectsGlobalScope": false
       },
-      "../node_modules/@walletconnect/environment/dist/cjs/crypto.d.ts": {
+      "../node_modules/WallectConnect/environment/dist/cjs/crypto.d.ts": {
         "version": "612e990e85f99aa8f2329d6d4d755713a44bd5c2041b02baae19c3ed1523f1de",
         "signature": "612e990e85f99aa8f2329d6d4d755713a44bd5c2041b02baae19c3ed1523f1de",
         "affectsGlobalScope": false
       },
-      "../node_modules/@walletconnect/environment/dist/cjs/env.d.ts": {
+      "../node_modules/WallectConnect/environment/dist/cjs/env.d.ts": {
         "version": "4a259c19075fb64b9c302da22c51feb14fb8ad0775a780fccbef6a9e6c082c63",
         "signature": "4a259c19075fb64b9c302da22c51feb14fb8ad0775a780fccbef6a9e6c082c63",
         "affectsGlobalScope": false
       },
-      "../node_modules/@walletconnect/environment/dist/cjs/index.d.ts": {
+      "../node_modules/WallectConnect/environment/dist/cjs/index.d.ts": {
         "version": "54223032d8849dd76ec6087684f361e9973c8de9c643b6a9ace67c136b13a326",
         "signature": "54223032d8849dd76ec6087684f361e9973c8de9c643b6a9ace67c136b13a326",
         "affectsGlobalScope": false
@@ -196,7 +196,7 @@
         "signature": "0ae96d34bca21bb9118f2a8269a625ba4eee909c5d14d475a2eef33cea431552",
         "affectsGlobalScope": false
       },
-      "../node_modules/@walletconnect/jsonrpc-types/dist/cjs/jsonrpc.d.ts": {
+      "../node_modules/WallectConnect/jsonrpc-types/dist/cjs/jsonrpc.d.ts": {
         "version": "60eccda0fe20dd2d7e881687e6f1b5ae54765ff58cf495f4e2f7fae6038bb951",
         "signature": "60eccda0fe20dd2d7e881687e6f1b5ae54765ff58cf495f4e2f7fae6038bb951",
         "affectsGlobalScope": false
@@ -431,22 +431,22 @@
         "signature": "49daf80661034e07d919f1c716aef69324e34d18a63a282f8100f52c961b58a7",
         "affectsGlobalScope": false
       },
-      "../node_modules/@walletconnect/jsonrpc-types/dist/cjs/misc.d.ts": {
+      "../node_modules/WallectConnect/jsonrpc-types/dist/cjs/misc.d.ts": {
         "version": "4b627d5cf853d831a19b7dfcf2c28cdbf65730c38d8ac1d1bb87ebebc8ffb359",
         "signature": "4b627d5cf853d831a19b7dfcf2c28cdbf65730c38d8ac1d1bb87ebebc8ffb359",
         "affectsGlobalScope": false
       },
-      "../node_modules/@walletconnect/jsonrpc-types/dist/cjs/provider.d.ts": {
+      "../node_modules/WallectConnect/jsonrpc-types/dist/cjs/provider.d.ts": {
         "version": "32ca4b9524e5720c7b1a700f16a1c9bd812316cace01d86d4733e83f9fb15885",
         "signature": "32ca4b9524e5720c7b1a700f16a1c9bd812316cace01d86d4733e83f9fb15885",
         "affectsGlobalScope": false
       },
-      "../node_modules/@walletconnect/jsonrpc-types/dist/cjs/validator.d.ts": {
+      "../node_modules/WallectConnect/jsonrpc-types/dist/cjs/validator.d.ts": {
         "version": "35366b6e559bbf23dcd58ca9557cf30bf7fda89eac58ad9d54ef450687c459fa",
         "signature": "35366b6e559bbf23dcd58ca9557cf30bf7fda89eac58ad9d54ef450687c459fa",
         "affectsGlobalScope": false
       },
-      "../node_modules/@walletconnect/jsonrpc-types/dist/cjs/index.d.ts": {
+      "../node_modules/WallectConnect/jsonrpc-types/dist/cjs/index.d.ts": {
         "version": "2d87c7263363c8fd82e91e10c56396ed5d144967fdadb0f4d92ffc73841a9e56",
         "signature": "2d87c7263363c8fd82e91e10c56396ed5d144967fdadb0f4d92ffc73841a9e56",
         "affectsGlobalScope": false
@@ -751,29 +751,29 @@
       "configFilePath": "../tsconfig.esm.json"
     },
     "referencedMap": {
-      "../node_modules/@walletconnect/environment/dist/cjs/index.d.ts": [
-        "../node_modules/@walletconnect/environment/dist/cjs/crypto.d.ts",
-        "../node_modules/@walletconnect/environment/dist/cjs/env.d.ts"
+      "../node_modules/WallectConnect/environment/dist/cjs/index.d.ts": [
+        "../node_modules/WallectConnect/environment/dist/cjs/crypto.d.ts",
+        "../node_modules/WallectConnect/environment/dist/cjs/env.d.ts"
       ],
-      "../node_modules/@walletconnect/jsonrpc-types/dist/cjs/index.d.ts": [
-        "../node_modules/@walletconnect/jsonrpc-types/dist/cjs/jsonrpc.d.ts",
-        "../node_modules/@walletconnect/jsonrpc-types/dist/cjs/misc.d.ts",
-        "../node_modules/@walletconnect/jsonrpc-types/dist/cjs/provider.d.ts",
-        "../node_modules/@walletconnect/jsonrpc-types/dist/cjs/validator.d.ts"
+      "../node_modules/WallectConnect/jsonrpc-types/dist/cjs/index.d.ts": [
+        "../node_modules/WallectConnect/jsonrpc-types/dist/cjs/jsonrpc.d.ts",
+        "../node_modules/WallectConnect/jsonrpc-types/dist/cjs/misc.d.ts",
+        "../node_modules/WallectConnect/jsonrpc-types/dist/cjs/provider.d.ts",
+        "../node_modules/WallectConnect/jsonrpc-types/dist/cjs/validator.d.ts"
       ],
-      "../node_modules/@walletconnect/jsonrpc-types/dist/cjs/misc.d.ts": [
+      "../node_modules/WallectConnect/jsonrpc-types/dist/cjs/misc.d.ts": [
         "../../../node_modules/@types/node/events.d.ts",
         "../../../node_modules/@types/node/index.d.ts"
       ],
-      "../node_modules/@walletconnect/jsonrpc-types/dist/cjs/provider.d.ts": [
-        "../node_modules/@walletconnect/jsonrpc-types/dist/cjs/jsonrpc.d.ts",
-        "../node_modules/@walletconnect/jsonrpc-types/dist/cjs/misc.d.ts"
+      "../node_modules/WallectConnect/jsonrpc-types/dist/cjs/provider.d.ts": [
+        "../node_modules/WallectConnect/jsonrpc-types/dist/cjs/jsonrpc.d.ts",
+        "../node_modules/WallectConnect/jsonrpc-types/dist/cjs/misc.d.ts"
       ],
       "../src/env.ts": [
-        "../node_modules/@walletconnect/environment/dist/cjs/index.d.ts"
+        "../node_modules/WallectConnect/environment/dist/cjs/index.d.ts"
       ],
       "../src/error.ts": [
-        "../node_modules/@walletconnect/jsonrpc-types/dist/cjs/index.d.ts",
+        "../node_modules/WallectConnect/jsonrpc-types/dist/cjs/index.d.ts",
         "../src/constants.ts",
         "../src/types.ts"
       ],
@@ -793,7 +793,7 @@
         "../src/validators.ts"
       ],
       "../src/types.ts": [
-        "../node_modules/@walletconnect/jsonrpc-types/dist/cjs/index.d.ts"
+        "../node_modules/WallectConnect/jsonrpc-types/dist/cjs/index.d.ts"
       ],
       "../src/validators.ts": [
         "../src/types.ts"
@@ -1207,29 +1207,29 @@
       ]
     },
     "exportedModulesMap": {
-      "../node_modules/@walletconnect/environment/dist/cjs/index.d.ts": [
-        "../node_modules/@walletconnect/environment/dist/cjs/crypto.d.ts",
-        "../node_modules/@walletconnect/environment/dist/cjs/env.d.ts"
+      "../node_modules/WallectConnect/environment/dist/cjs/index.d.ts": [
+        "../node_modules/WallectConnect/environment/dist/cjs/crypto.d.ts",
+        "../node_modules/WallectConnect/environment/dist/cjs/env.d.ts"
       ],
-      "../node_modules/@walletconnect/jsonrpc-types/dist/cjs/index.d.ts": [
-        "../node_modules/@walletconnect/jsonrpc-types/dist/cjs/jsonrpc.d.ts",
-        "../node_modules/@walletconnect/jsonrpc-types/dist/cjs/misc.d.ts",
-        "../node_modules/@walletconnect/jsonrpc-types/dist/cjs/provider.d.ts",
-        "../node_modules/@walletconnect/jsonrpc-types/dist/cjs/validator.d.ts"
+      "../node_modules/WallectConnect/jsonrpc-types/dist/cjs/index.d.ts": [
+        "../node_modules/WallectConnect/jsonrpc-types/dist/cjs/jsonrpc.d.ts",
+        "../node_modules/WallectConnect/jsonrpc-types/dist/cjs/misc.d.ts",
+        "../node_modules/WallectConnect/jsonrpc-types/dist/cjs/provider.d.ts",
+        "../node_modules/WallectConnect/jsonrpc-types/dist/cjs/validator.d.ts"
       ],
-      "../node_modules/@walletconnect/jsonrpc-types/dist/cjs/misc.d.ts": [
+      "../node_modules/WallectConnect/jsonrpc-types/dist/cjs/misc.d.ts": [
         "../../../node_modules/@types/node/events.d.ts",
         "../../../node_modules/@types/node/index.d.ts"
       ],
-      "../node_modules/@walletconnect/jsonrpc-types/dist/cjs/provider.d.ts": [
-        "../node_modules/@walletconnect/jsonrpc-types/dist/cjs/jsonrpc.d.ts",
-        "../node_modules/@walletconnect/jsonrpc-types/dist/cjs/misc.d.ts"
+      "../node_modules/WallectConnect/jsonrpc-types/dist/cjs/provider.d.ts": [
+        "../node_modules/WallectConnect/jsonrpc-types/dist/cjs/jsonrpc.d.ts",
+        "../node_modules/WallectConnect/jsonrpc-types/dist/cjs/misc.d.ts"
       ],
       "../src/env.ts": [
-        "../node_modules/@walletconnect/environment/dist/cjs/index.d.ts"
+        "../node_modules/WallectConnect/environment/dist/cjs/index.d.ts"
       ],
       "../src/error.ts": [
-        "../node_modules/@walletconnect/jsonrpc-types/dist/cjs/index.d.ts",
+        "../node_modules/WallectConnect/jsonrpc-types/dist/cjs/index.d.ts",
         "../src/types.ts"
       ],
       "../src/format.ts": [
@@ -1246,7 +1246,7 @@
         "../src/validators.ts"
       ],
       "../src/types.ts": [
-        "../node_modules/@walletconnect/jsonrpc-types/dist/cjs/index.d.ts"
+        "../node_modules/WallectConnect/jsonrpc-types/dist/cjs/index.d.ts"
       ],
       "../src/validators.ts": [
         "../src/types.ts"
@@ -1660,14 +1660,14 @@
       ]
     },
     "semanticDiagnosticsPerFile": [
-      "../node_modules/@walletconnect/environment/dist/cjs/crypto.d.ts",
-      "../node_modules/@walletconnect/environment/dist/cjs/env.d.ts",
-      "../node_modules/@walletconnect/environment/dist/cjs/index.d.ts",
-      "../node_modules/@walletconnect/jsonrpc-types/dist/cjs/index.d.ts",
-      "../node_modules/@walletconnect/jsonrpc-types/dist/cjs/jsonrpc.d.ts",
-      "../node_modules/@walletconnect/jsonrpc-types/dist/cjs/misc.d.ts",
-      "../node_modules/@walletconnect/jsonrpc-types/dist/cjs/provider.d.ts",
-      "../node_modules/@walletconnect/jsonrpc-types/dist/cjs/validator.d.ts",
+      "../node_modules/WallectConnect/environment/dist/cjs/crypto.d.ts",
+      "../node_modules/WallectConnect/environment/dist/cjs/env.d.ts",
+      "../node_modules/WallectConnect/environment/dist/cjs/index.d.ts",
+      "../node_modules/WallectConnect/jsonrpc-types/dist/cjs/index.d.ts",
+      "../node_modules/WallectConnect/jsonrpc-types/dist/cjs/jsonrpc.d.ts",
+      "../node_modules/WallectConnect/jsonrpc-types/dist/cjs/misc.d.ts",
+      "../node_modules/WallectConnect/jsonrpc-types/dist/cjs/provider.d.ts",
+      "../node_modules/WallectConnect/jsonrpc-types/dist/cjs/validator.d.ts",
       "../src/constants.ts",
       "../src/env.ts",
       "../src/error.ts",

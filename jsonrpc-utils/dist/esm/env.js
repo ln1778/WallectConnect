@@ -1,4 +1,4 @@
-import { isNode } from "@walletconnect/environment";
+import { isNode } from "WallectConnect/environment";
 export const isNodeJs = isNode;
-export * from "@walletconnect/environment";
+export * from "WallectConnect/environment";
 //# sourceMappingURL=env.js.map
