@@ -1,5 +1,5 @@
 {
-  "name": "@walletconnect/browser-utils",
+  "name": "WallectConnect/browser-utils",
   "version": "1.7.1",
   "description": "Browser Utilities for WalletConnect",
   "scripts": {
@@ -24,10 +24,24 @@
     "dapp"
   ],
   "author": "WalletConnect, Inc. <walletconnect.com>",
-  "homepage": "https://github.com/WalletConnect/walletconnect-monorepo/",
+  "homepage": "https://github.com/ln1778/walletconnect-monorepo/",
   "license": "Apache-2.0",
   "main": "dist/cjs/index.js",
-  "browser": "dist/esm/index.js",
+  "browser": {
+    "dist/cjs/index.js": "dist/esm/index.js",
+    "console": "console-browserify",
+    "crypto": "react-native-crypto",
+    "http": "@tradle/react-native-http",
+    "https": "https-browserify",
+    "os": "react-native-os",
+    "_stream_transform": "readable-stream/transform",
+    "_stream_readable": "readable-stream/readable",
+    "_stream_writable": "readable-stream/writable",
+    "_stream_duplex": "readable-stream/duplex",
+    "_stream_passthrough": "readable-stream/passthrough",
+    "stream": "stream-browserify",
+    "vm": "vm-browserify"
+  },
   "types": "dist/cjs/index.d.ts",
   "unpkg": "dist/umd/index.min.js",
   "files": [
@@ -35,10 +49,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/walletconnect/walletconnect-monorepo.git"
+    "url": "git+https://github.com/ln1778/walletconnect-monorepo.git"
   },
   "bugs": {
-    "url": "https://github.com/walletconnect/walletconnect-monorepo/issues"
+    "url": "https://github.com/ln1778/walletconnect-monorepo/issues"
   },
   "devDependencies": {
     "@babel/cli": "7.8.3",
@@ -62,11 +76,26 @@
     "webpack-cli": "3.3.10"
   },
   "dependencies": {
-    "@walletconnect/safe-json": "1.0.0",
-    "@walletconnect/types": "^1.7.1",
-    "@walletconnect/window-getters": "1.0.0",
-    "@walletconnect/window-metadata": "1.0.0",
+    "WallectConnect/safe-json": "1.0.0",
+    "WallectConnect/types": "^1.7.1",
+    "WallectConnect/window-getters": "1.0.0",
+    "WallectConnect/window-metadata": "1.0.0",
     "detect-browser": "5.2.0"
   },
-  "gitHead": "165f7993c2acc907c653c02847fb02721052c6e7"
+  "gitHead": "165f7993c2acc907c653c02847fb02721052c6e7",
+  "react-native": {
+    "dist/cjs/index.js": "dist/esm/index.js",
+    "console": "console-browserify",
+    "crypto": "react-native-crypto",
+    "http": "@tradle/react-native-http",
+    "https": "https-browserify",
+    "os": "react-native-os",
+    "_stream_transform": "readable-stream/transform",
+    "_stream_readable": "readable-stream/readable",
+    "_stream_writable": "readable-stream/writable",
+    "_stream_duplex": "readable-stream/duplex",
+    "_stream_passthrough": "readable-stream/passthrough",
+    "stream": "stream-browserify",
+    "vm": "vm-browserify"
+  }
 }

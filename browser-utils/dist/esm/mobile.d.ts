@@ -1,4 +1,4 @@
-import { IMobileRegistryEntry, IMobileRegistry, IMobileLinkInfo } from "@walletconnect/types";
+import { IMobileRegistryEntry, IMobileRegistry, IMobileLinkInfo } from "WallectConnect/types";
 export declare const mobileLinkChoiceKey = "WALLETCONNECT_DEEPLINK_CHOICE";
 export declare function formatIOSMobile(uri: string, entry: IMobileRegistryEntry): string;
 export declare function saveMobileLinkInfo(data: IMobileLinkInfo): void;

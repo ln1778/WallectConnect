@@ -1,5 +1,5 @@
-import * as windowMetadata from "@walletconnect/window-metadata";
-import * as windowGetters from "@walletconnect/window-getters";
+import * as windowMetadata from "WallectConnect/window-metadata";
+import * as windowGetters from "WallectConnect/window-getters";
 import { detect, } from "detect-browser";
 export function detectEnv(userAgent) {
     return detect(userAgent);
