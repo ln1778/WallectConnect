@@ -7,16 +7,16 @@ For more details, read the [documentation](https://docs.walletconnect.org)
 ## Install
 
 ```bash
-yarn add @walletconnect/client
+yarn add WallectConnect/client
 # OR
 
-npm install --save @walletconnect/client
+npm install --save WallectConnect/client
 ```
 
 ## Initiate Connection
 
 ```javascript
-import WalletConnect from "@walletconnect/client";
+import WalletConnect from "WallectConnect/client";
 
 // Create a connector
 const connector = new WalletConnect({
@@ -246,8 +246,8 @@ connector
 ## Create Instant Request
 
 ```js
-import WalletConnect from "@walletconnect/browser";
-import WalletConnectQRCodeModal from "@walletconnect/qrcode-modal";
+import WalletConnect from "WallectConnect/browser";
+import WalletConnectQRCodeModal from "WallectConnect/qrcode-modal";
 
 // Create a connector
 const connector = new WalletConnect();
