@@ -1,4 +1,4 @@
-import { IMobileRegistryEntry, IQRCodeModalOptions } from "types";
+import { IMobileRegistryEntry, IQRCodeModalOptions } from "./../../../core";
 import { TextMap } from "../types";
 interface LinkDisplayProps {
     mobile: boolean;

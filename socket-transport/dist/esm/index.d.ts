@@ -1,4 +1,4 @@
-import { ITransportLib, ISocketTransportOptions } from "types";
+import { ITransportLib, ISocketTransportOptions } from "./../../../core";
 declare class SocketTransport implements ITransportLib {
     private opts;
     private _protocol;

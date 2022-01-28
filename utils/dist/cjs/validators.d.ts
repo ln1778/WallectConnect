@@ -1,4 +1,4 @@
-import { IJsonRpcSubscription, IJsonRpcRequest, IJsonRpcResponseSuccess, IJsonRpcResponseError, IInternalEvent } from "types";
+import { IJsonRpcSubscription, IJsonRpcRequest, IJsonRpcResponseSuccess, IJsonRpcResponseError, IInternalEvent } from "./../../../core";
 export declare function isEmptyString(value: string): boolean;
 export declare function isEmptyArray(array: any[]): boolean;
 export declare function isBuffer(val: any): boolean;

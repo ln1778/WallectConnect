@@ -1,4 +1,4 @@
-import { IInternalEvent, IJsonRpcResponseSuccess, IJsonRpcResponseError, IJsonRpcRequest, IEventEmitter } from "types";
+import { IInternalEvent, IJsonRpcResponseSuccess, IJsonRpcResponseError, IJsonRpcRequest, IEventEmitter } from "./../../../core";
 declare class EventManager {
     private _eventEmitters;
     constructor();

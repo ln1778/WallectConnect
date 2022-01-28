@@ -1,5 +1,5 @@
 import * as jsonRpcUtils from "jsonrpc-utils";
-import { IRpcConfig } from "types";
+import { IRpcConfig } from "./../../../core";
 export declare function sanitizeHex(hex: string): string;
 export declare function addHexPrefix(hex: string): string;
 export declare function removeHexPrefix(hex: string): string;

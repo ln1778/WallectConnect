@@ -1,4 +1,4 @@
-import { IConnector, IConnectorOpts, ISessionStatus, ISessionError, IJsonRpcResponseSuccess, IJsonRpcResponseError, IJsonRpcRequest, ITxData, IClientMeta, IUpdateChainParams, IRequestOptions, IInternalRequestOptions, ICreateSessionOptions } from "types";
+import { IConnector, IConnectorOpts, ISessionStatus, ISessionError, IJsonRpcResponseSuccess, IJsonRpcResponseError, IJsonRpcRequest, ITxData, IClientMeta, IUpdateChainParams, IRequestOptions, IInternalRequestOptions, ICreateSessionOptions } from "./../../../core";
 declare class Connector implements IConnector {
     readonly protocol = "wc";
     readonly version = 1;

@@ -1,4 +1,4 @@
-import { IJsonRpcResponseSuccess, IJsonRpcResponseError, IJsonRpcErrorMessage } from "types";
+import { IJsonRpcResponseSuccess, IJsonRpcResponseError, IJsonRpcErrorMessage } from "./../../../core";
 export declare function promisify(originalFn: (...args: any[]) => void, thisArg?: any): (...callArgs: any[]) => Promise<IJsonRpcResponseSuccess | IJsonRpcResponseError>;
 export declare function formatRpcError(error: Partial<IJsonRpcErrorMessage>): {
     code: number;

@@ -1,4 +1,4 @@
-import { IMobileRegistryEntry, IAppRegistry, IAppEntry } from "types";
+import { IMobileRegistryEntry, IAppRegistry, IAppEntry } from "./../../../core";
 export declare function getWalletRegistryUrl(): string;
 export declare function getDappRegistryUrl(): string;
 export declare function getAppLogoUrl(id: any): string;

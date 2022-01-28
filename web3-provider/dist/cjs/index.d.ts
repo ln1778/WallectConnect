@@ -1,5 +1,5 @@
 import HttpConnection from "http-connection";
-import { IRPCMap, IConnector, IJsonRpcResponseSuccess, IWalletConnectProviderOptions, IQRCodeModalOptions } from "types";
+import { IRPCMap, IConnector, IJsonRpcResponseSuccess, IWalletConnectProviderOptions, IQRCodeModalOptions } from "./../../../core";
 declare const ProviderEngine: any;
 declare class WalletConnectProvider extends ProviderEngine {
     bridge: string;

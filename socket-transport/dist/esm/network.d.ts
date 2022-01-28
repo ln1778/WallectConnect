@@ -1,4 +1,4 @@
-import { NetworkEvent, INetworkMonitor } from "types";
+import { NetworkEvent, INetworkMonitor } from "./../../../core";
 declare class NetworkMonitor implements INetworkMonitor {
     private _eventEmitters;
     constructor();
