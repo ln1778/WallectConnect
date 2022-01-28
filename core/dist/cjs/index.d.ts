@@ -1,4 +1,4 @@
-import { IConnector, IConnectorOpts, ISessionStatus, ISessionError, IJsonRpcResponseSuccess, IJsonRpcResponseError, IJsonRpcRequest, ITxData, IClientMeta, IUpdateChainParams, IRequestOptions, IInternalRequestOptions, ICreateSessionOptions } from "@walletconnect/types";
+import { IConnector, IConnectorOpts, ISessionStatus, ISessionError, IJsonRpcResponseSuccess, IJsonRpcResponseError, IJsonRpcRequest, ITxData, IClientMeta, IUpdateChainParams, IRequestOptions, IInternalRequestOptions, ICreateSessionOptions } from "WallectConnect/types";
 declare class Connector implements IConnector {
     readonly protocol = "wc";
     readonly version = 1;

@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const utils_1 = require("@walletconnect/utils");
+const utils_1 = require("WallectConnect/utils");
 class SessionStorage {
     constructor(storageId = "walletconnect") {
         this.storageId = storageId;

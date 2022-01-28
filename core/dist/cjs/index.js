@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
-const utils_1 = require("@walletconnect/utils");
-const socket_transport_1 = (0, tslib_1.__importDefault)(require("@walletconnect/socket-transport"));
+const utils_1 = require("WallectConnect/utils");
+const socket_transport_1 = (0, tslib_1.__importDefault)(require("WallectConnect/socket-transport"));
 const errors_1 = require("./errors");
 const events_1 = (0, tslib_1.__importDefault)(require("./events"));
 const storage_1 = (0, tslib_1.__importDefault)(require("./storage"));
@@ -313,7 +313,7 @@ class Connector {
                         peerMeta: this.clientMeta,
                         chainId: opts && opts.chainId ? opts.chainId : null,
                         code_name:opts && opts.code_name ? opts.code_name : null,
-                        contract:opts && opts.contract ? opts.contract : null,
+                        contract:opts && opts.contract ? opts.contract : null
                     },
                 ],
             });
@@ -827,6 +827,7 @@ class Connector {
             this.handshakeId = payload.id;
             this.peerId = payload.params[0].peerId;
             this.peerMeta = payload.params[0].peerMeta;
+            console.log(this.peerMeta,"peerMeta");
             const internalPayload = Object.assign(Object.assign({}, payload), { method: "session_request" });
             this._eventManager.trigger(internalPayload);
         });

@@ -1,4 +1,4 @@
-import { IInternalEvent, IJsonRpcResponseSuccess, IJsonRpcResponseError, IJsonRpcRequest, IEventEmitter } from "@walletconnect/types";
+import { IInternalEvent, IJsonRpcResponseSuccess, IJsonRpcResponseError, IJsonRpcRequest, IEventEmitter } from "WallectConnect/types";
 declare class EventManager {
     private _eventEmitters;
     constructor();

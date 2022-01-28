@@ -1,4 +1,4 @@
-import { isJsonRpcRequest, isJsonRpcResponseSuccess, isJsonRpcResponseError, isInternalEvent, isReservedEvent, } from "@walletconnect/utils";
+import { isJsonRpcRequest, isJsonRpcResponseSuccess, isJsonRpcResponseError, isInternalEvent, isReservedEvent, } from "WallectConnect/utils";
 class EventManager {
     constructor() {
         this._eventEmitters = [];

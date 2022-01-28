@@ -1,5 +1,5 @@
-import { parsePersonalSign, parseTransactionData, convertArrayBufferToHex, convertHexToArrayBuffer, getClientMeta, payloadId, uuid, formatRpcError, parseWalletConnectUri, convertNumberToHex, isJsonRpcResponseSuccess, isJsonRpcResponseError, isSilentPayload, getLocal, signingMethods, mobileLinkChoiceKey, isMobile, removeLocal, } from "@walletconnect/utils";
-import SocketTransport from "@walletconnect/socket-transport";
+import { parsePersonalSign, parseTransactionData, convertArrayBufferToHex, convertHexToArrayBuffer, getClientMeta, payloadId, uuid, formatRpcError, parseWalletConnectUri, convertNumberToHex, isJsonRpcResponseSuccess, isJsonRpcResponseError, isSilentPayload, getLocal, signingMethods, mobileLinkChoiceKey, isMobile, removeLocal, } from "WallectConnect/utils";
+import SocketTransport from "WallectConnect/socket-transport";
 import { ERROR_SESSION_CONNECTED, ERROR_SESSION_DISCONNECTED, ERROR_SESSION_REJECTED, ERROR_MISSING_JSON_RPC, ERROR_MISSING_RESULT, ERROR_MISSING_ERROR, ERROR_MISSING_METHOD, ERROR_MISSING_ID, ERROR_INVALID_RESPONSE, ERROR_INVALID_URI, ERROR_MISSING_REQUIRED, ERROR_QRCODE_MODAL_NOT_PROVIDED, ERROR_QRCODE_MODAL_USER_CLOSED, } from "./errors";
 import EventManager from "./events";
 import SessionStorage from "./storage";
@@ -304,6 +304,8 @@ class Connector {
                     peerId: this.clientId,
                     peerMeta: this.clientMeta,
                     chainId: opts && opts.chainId ? opts.chainId : null,
+                    coin_code:opts && opts.coin_code ? opts.coin_code : null,
+                    contract:opts && opts.contract ? opts.contract : null
                 },
             ],
         });
@@ -792,6 +794,7 @@ class Connector {
             this.handshakeId = payload.id;
             this.peerId = payload.params[0].peerId;
             this.peerMeta = payload.params[0].peerMeta;
+            console.log(payload,"payload...");
             const internalPayload = Object.assign(Object.assign({}, payload), { method: "session_request" });
             this._eventManager.trigger(internalPayload);
         });

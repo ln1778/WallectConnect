@@ -1,4 +1,4 @@
-import { isWalletConnectSession, getLocal, setLocal, removeLocal } from "@walletconnect/utils";
+import { isWalletConnectSession, getLocal, setLocal, removeLocal } from "WallectConnect/utils";
 class SessionStorage {
     constructor(storageId = "walletconnect") {
         this.storageId = storageId;
