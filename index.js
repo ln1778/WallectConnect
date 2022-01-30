@@ -5,4 +5,4 @@ const QrcodeModal =require("./qrcode-modal");
 
 module.exports.client= WalletConnect.default;
 module.exports.Qrcode=ReactQrcode;
-module.exports.QrcodeModal=QrcodeModal.default;
+module.exports.QrcodeModal=QrcodeModal;

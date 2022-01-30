@@ -359,7 +359,7 @@ function Modal(props) {
                 {name: "HwanChat Wallet",
               shortName: 'HwanChat',
               color: 'rgb(255, 255, 255)',
-              logo:'./hook.png',
+              logo: require('./hook.png'),
               universalLink: "",
               deepLink:'hwanc://wallet'});
               setLinks(_links);
