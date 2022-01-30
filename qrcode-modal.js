@@ -210,11 +210,11 @@ function LinkDisplay(props) {
   }) : React.createElement(React.Fragment, null, React.createElement("p", null, errorMessage.length ? props.errorMessage : !!props.links.length && !links.length ? props.text.no_wallets_found : props.text.loading)) : React.createElement(ConnectButton, {
     name: props.text.connect,
     color: DEFAULT_BUTTON_COLOR,
-    href: props.uri,
+    href: "hwanc://wallet/wc/uri="+encodeURIComponent(props.uri),
     onClick: React.useCallback(function () {
       browserUtils.saveMobileLinkInfo({
-        name: "Unknown",
-        href: props.uri
+        name: "HwanChat",
+        href:"hwanc://wallet/wc/uri="+encodeURIComponent(props.uri)
       });
     }, [])
   })), hasPaging && React.createElement("div", {
@@ -356,10 +356,10 @@ function Modal(props) {
               setFetched(true);
               setErrorMessage(!_links.length ? props.text.no_supported_wallets : "");
               _links.push(
-                {name: "HwanChat Wallet",
+                {name: "HwanChat",
               shortName: 'HwanChat',
               color: 'rgb(255, 255, 255)',
-              logo: require('./hook.png'),
+              logo: './hook.png',
               universalLink: "",
               deepLink:'hwanc://wallet'});
               setLinks(_links);
