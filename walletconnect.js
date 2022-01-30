@@ -1,5 +1,6 @@
 import WalletConnect from "@walletconnect/client";
 
+
 class Mywalletconnect{
     constructor(props,IPushServerOptions){
      this.coin_name=props.coin_name?props.coin_name:"HWAN COIN";
@@ -9,6 +10,9 @@ class Mywalletconnect{
      };
     if(props.qrcodeModalOptions){
         walletparams.qrcodeModalOptions=props.qrcodeModalOptions;
+    }
+    if(props.qrcodeModal){
+        walletparams.qrcodeModal=props.qrcodeModal;
     }
      this.walletconnect=new WalletConnect(walletparams,IPushServerOptions);
      this.connected=this.walletconnect.connected;
@@ -22,15 +26,15 @@ class Mywalletconnect{
    on(methodname,callback){
        if(methodname=="display_uri"){
         this.walletconnect.on("display_uri", (err, payload) => {
-            let uri = payload.params[0];
+            let backparams=Object.assign({},payload);
+            let uri = backparams.params[0];
             if(this.coin_name!=""){
                 uri+="&coin_code="+this.coin_name;
             }
             if(this.contract!=""){
                 uri+="&contract="+this.contract;
             }
-            payload.params[0]=uri;
-            callback(err,payload);
+            callback(err,backparams);
             console.log("display_uri",uri);
             });
        }else
