@@ -1,6 +1,6 @@
 {
   "name": "@lnssh/wallectconnect",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "Demo",
   "main": "index.js",
   
@@ -21,6 +21,7 @@
   "dependencies": {
     "@walletconnect/qrcode-modal": "^1.7.1",
     "@walletconnect/web3-provider": "^1.7.1",
+    "@walletconnect/client":"^1.7.1",
     "axios": "^0.25.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
