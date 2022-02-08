@@ -29,13 +29,13 @@ class Mywalletconnect{
             let backparams=Object.assign({},payload);
             let uri = backparams.params[0];
             if(this.coin_name!=""){
-                uri+="&coin_code="+this.coin_name;
+                uri+="&coin_name="+this.coin_name;
             }
             if(this.contract!=""){
                 uri+="&contract="+this.contract;
             }
+            backparams.params=[uri];
             callback(err,backparams);
-            console.log("display_uri",uri);
             });
        }else
         if(methodname=="connect"){
