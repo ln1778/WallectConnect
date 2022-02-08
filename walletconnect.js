@@ -101,10 +101,10 @@ class Mywalletconnect{
              });
     });
    }
-   sendHwaPayment(params){
+   sendHwaSignTransaction(params){
     return new Promise((resolve, reject) => {
         const customRequest = {
-            method: "hwa_payment",
+            method: "hwa_sendSignTransaction",
             params:params,
         };
     this.walletconnect.sendCustomRequest(customRequest).then((result) => {
@@ -116,6 +116,35 @@ class Mywalletconnect{
             });
         });
   }
-
+  signHwaTransaction(params){
+    return new Promise((resolve, reject) => {
+        const customRequest = {
+            method: "hwa_signTransaction",
+            params:params,
+        };
+    this.walletconnect.sendCustomRequest(customRequest).then((result) => {
+           console.log(result,'payresult');
+            resolve(result);
+      }).catch((error) => {
+          console.log(error,"payerror");
+            reject(error);
+            });
+        });
+  }
+  showAccountSwitch(params){
+    return new Promise((resolve, reject) => {
+        const customRequest = {
+            method: "hwa_showAccountSwitch",
+            params:params,
+        };
+    this.walletconnect.sendCustomRequest(customRequest).then((result) => {
+           console.log(result,'payresult');
+            resolve(result);
+      }).catch((error) => {
+          console.log(error,"payerror");
+            reject(error);
+            });
+        });
+  }
 }
 export default Mywalletconnect;
