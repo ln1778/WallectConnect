@@ -3,10 +3,10 @@ import WalletConnect from "@walletconnect/client";
 
 class Mywalletconnect{
     constructor(props,IPushServerOptions){
-     this.coin_name=props.coin_name?props.coin_name:"HWAN COIN";
+     this.coin_name=props.coin_name?props.coin_name:"HWAN CHAIN";
      this.contract=props.contract?props.contract:"";
      let walletparams={
-        bridge: "https://bridge.walletconnect.org"
+        bridge:props.bridge?props.bridge:"https://bridge.walletconnect.org"
      };
     if(props.qrcodeModalOptions){
         walletparams.qrcodeModalOptions=props.qrcodeModalOptions;
@@ -16,12 +16,151 @@ class Mywalletconnect{
     }
      this.walletconnect=new WalletConnect(walletparams,IPushServerOptions);
      this.connected=this.walletconnect.connected;
+     this.hwa={
+        request:()=>{
+            return new Promise((resolve, reject) => {
+                const customRequest = {
+                    method: "hwa_request",
+                    params:params,
+                };
+            this.walletconnect.sendCustomRequest(customRequest).then((result) => {
+                   
+                    resolve(result);
+              }).catch((error) => {
+                  
+                    reject(error);
+                    });
+                });
+        },
+        autofill:(params)=>{
+            return new Promise((resolve, reject) => {
+                const customRequest = {
+                    method: "hwa_autofill",
+                    params:params,
+                };
+            this.walletconnect.sendCustomRequest(customRequest).then((result) => {
+                   
+                    resolve(result);
+              }).catch((error) => {
+                  
+                    reject(error);
+                    });
+                });
+        },
+       submit:(params)=>{
+        return new Promise((resolve, reject) => {
+            const customRequest = {
+                method: "hwa_submit",
+                params:params,
+            };
+        this.walletconnect.sendCustomRequest(customRequest).then((result) => {
+               
+                resolve(result);
+          }).catch((error) => {
+              
+                reject(error);
+                });
+            });
+        },
+        signMessage:(params)=>{
+         return new Promise((resolve, reject) => {
+             const customRequest = {
+                 method: "hwa_signMessage",
+                 params:params,
+             };
+         this.walletconnect.sendCustomRequest(customRequest).then((result) => {
+                
+                 resolve(result);
+           }).catch((error) => {
+               
+                 reject(error);
+                 });
+             });
+         },
+         sign:(params)=>{
+          return new Promise((resolve, reject) => {
+              const customRequest = {
+                  method: "hwa_sign",
+                  params:params,
+              };
+          this.walletconnect.sendCustomRequest(customRequest).then((result) => {
+                 
+                  resolve(result);
+            }).catch((error) => {
+                
+                  reject(error);
+                  });
+              });
+          },
+          toHex:(params)=>{
+           return new Promise((resolve, reject) => {
+               const customRequest = {
+                   method: "hwa_toHex",
+                   params:params,
+               };
+           this.walletconnect.sendCustomRequest(customRequest).then((result) => {
+                  
+                   resolve(result);
+             }).catch((error) => {
+                 
+                   reject(error);
+                   });
+               });
+           },
+           toDrops:(params)=>{
+            return new Promise((resolve, reject) => {
+                const customRequest = {
+                    method: "hwa_toDrops",
+                    params:params,
+                };
+            this.walletconnect.sendCustomRequest(customRequest).then((result) => {
+                   
+                    resolve(result);
+              }).catch((error) => {
+                  
+                    reject(error);
+                    });
+                });
+           },
+           keccakFromString:(params)=>{
+            return new Promise((resolve, reject) => {
+                const customRequest = {
+                    method: "hwa_keccakFromString",
+                    params:params,
+                };
+            this.walletconnect.sendCustomRequest(customRequest).then((result) => {
+                   
+                    resolve(result);
+              }).catch((error) => {
+                  
+                    reject(error);
+                    });
+                });
+            },
+            getBalances:(params)=>{
+                return new Promise((resolve, reject) => {
+                    const customRequest = {
+                        method: "hwa_getBalances",
+                        params:params,
+                    };
+                this.walletconnect.sendCustomRequest(customRequest).then((result) => {
+                       
+                        resolve(result);
+                  }).catch((error) => {
+                      
+                        reject(error);
+                        });
+                    });
+            }
+      }
     }
     createSession(props){
         this.walletconnect.createSession(props);
     }
     killSession(){
-        this.walletconnect.killSession();
+        if(this.walletconnect.connected){
+            this.walletconnect.killSession();
+        }
     }
    on(methodname,callback){
        if(methodname=="display_uri"){
@@ -37,9 +176,14 @@ class Mywalletconnect{
             backparams.params=[uri];
             callback(err,backparams);
             });
-       }else
-        if(methodname=="connect"){
+       }else if(methodname=="connect"){
         this.walletconnect.on('connect',(err, payload) => {
+            this.connected=true;
+            callback(err, payload);
+        });
+       }else if(methodname=="disconnect"){
+        this.walletconnect.on('disconnect',(err, payload) => {
+            this.connected=false;
             callback(err, payload);
         });
        }else{
@@ -49,10 +193,10 @@ class Mywalletconnect{
    sendTransaction(customRequest){
     return new Promise((resolve, reject) => {
         this.walletconnect.sendTransaction(customRequest).then((result) => {
-            console.log(result,'payresult');
+            
              resolve(result);
        }).catch((error) => {
-           console.log(error,"payerror");
+           
              reject(error);
              });
     });
@@ -60,10 +204,10 @@ class Mywalletconnect{
    signPersonalMessage(customRequest){
     return new Promise((resolve, reject) => {
         this.walletconnect.signPersonalMessage(customRequest).then((result) => {
-            console.log(result,'payresult');
+            
              resolve(result);
        }).catch((error) => {
-           console.log(error,"payerror");
+           
              reject(error);
              });
     });
@@ -71,10 +215,10 @@ class Mywalletconnect{
    signMessage(customRequest){
     return new Promise((resolve, reject) => {
         this.walletconnect.signMessage(customRequest).then((result) => {
-            console.log(result,'payresult');
+            
              resolve(result);
        }).catch((error) => {
-           console.log(error,"payerror");
+           
              reject(error);
              });
     });
@@ -82,10 +226,10 @@ class Mywalletconnect{
    sendCustomRequest(customRequest){
     return new Promise((resolve, reject) => {
         this.walletconnect.sendCustomRequest(customRequest).then((result) => {
-            console.log(result,'payresult');
+            
              resolve(result);
        }).catch((error) => {
-           console.log(error,"payerror");
+           
              reject(error);
              });
     });
@@ -93,10 +237,10 @@ class Mywalletconnect{
    signTypedData(customRequest){
     return new Promise((resolve, reject) => {
         this.walletconnect.signTypedData(customRequest).then((result) => {
-            console.log(result,'payresult');
+            
              resolve(result);
        }).catch((error) => {
-           console.log(error,"payerror");
+           
              reject(error);
              });
     });
@@ -108,10 +252,10 @@ class Mywalletconnect{
             params:params,
         };
     this.walletconnect.sendCustomRequest(customRequest).then((result) => {
-           console.log(result,'payresult');
+           
             resolve(result);
       }).catch((error) => {
-          console.log(error,"payerror");
+          
             reject(error);
             });
         });
@@ -123,14 +267,15 @@ class Mywalletconnect{
             params:params,
         };
     this.walletconnect.sendCustomRequest(customRequest).then((result) => {
-           console.log(result,'payresult');
+           
             resolve(result);
       }).catch((error) => {
-          console.log(error,"payerror");
+          
             reject(error);
             });
         });
   }
+  
   showAccountSwitch(params){
     return new Promise((resolve, reject) => {
         const customRequest = {
@@ -138,10 +283,10 @@ class Mywalletconnect{
             params:params,
         };
     this.walletconnect.sendCustomRequest(customRequest).then((result) => {
-           console.log(result,'payresult');
+           
             resolve(result);
       }).catch((error) => {
-          console.log(error,"payerror");
+          
             reject(error);
             });
         });
